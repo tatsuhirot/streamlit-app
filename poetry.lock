@@ -515,8 +515,8 @@ watchmedo = ["PyYAML (>=3.10)"]
 
 [metadata]
 lock-version = "1.1"
-python-versions = "3.10.4"
-content-hash = "b594e298b64d658604930ede3ed52025a96d72817393231669ac978495c95647"
+python-versions = "3.9.12"
+content-hash = "53bdacb59315d61137558fe4494a29276586a29165fcf8e624a80f41758a4231"
 
 [metadata.files]
 altair = [
