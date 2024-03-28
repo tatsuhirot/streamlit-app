@@ -3,5 +3,5 @@ import streamlit as st
 
 st.title('Home Page')
 
-st.markdown('## Portfolio for My Data Visualization Projects')
+st.markdown('## Portfolio for Data Visualization Projects')
 

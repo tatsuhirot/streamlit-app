@@ -1,9 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
 
+np.random.seed(0)  
 # JP: 魚種ごとにAmountの分布を調整するための関数を定義
 # EN: Define a function to adjust the distribution of Amount for each species
 def adjust_amount(species):
@@ -30,14 +30,12 @@ def adjust_amount(species):
     else:
         return np.random.randint(0, 31)
     
-
 date_range = pd.date_range(start="2000-01-01", end="2000-03-31")
 species = [
     "Tuna", "Salmon", "Trout", "Mackerel", "Sardine",
     "Cod", "Herring", "Flounder", "Sea Bass", "Snapper"
 ]
 # データフレームの生成
-np.random.seed(0)  
 data = {
     "Date": np.repeat(date_range, len(species)),
     "Species": np.tile(species, len(date_range)),
@@ -48,9 +46,8 @@ df = pd.DataFrame(data)
 # データフレームのAmount列を更新
 df['Amount'] = df['Species'].apply(adjust_amount)
 
-
 # タイトル
-st.title('Fish Yield Viewer')
+st.title('Fishing Catch Viewer')
 
 # ユーザー入力
 start_date = st.sidebar.date_input('Start date', date_range[0])
@@ -60,9 +57,6 @@ selected_species = st.sidebar.multiselect('Select species', species, default=spe
 # データフィルタリング
 filtered_data = df[(df['Date'] >= pd.to_datetime(start_date)) & (df['Date'] <= pd.to_datetime(end_date)) & (df['Species'].isin(selected_species))]
 
-# データ表示
-# st.write(filtered_data)
-
 # データ集計と折れ線グラフの作成
 line_fig = px.line(filtered_data.groupby(['Date', 'Species'])['Amount'].sum().reset_index(), x='Date', y='Amount', color='Species', title='Total Amount by Species Over Time')
 
@@ -70,6 +64,11 @@ line_fig = px.line(filtered_data.groupby(['Date', 'Species'])['Amount'].sum().re
 violin_fig = px.violin(filtered_data, y='Amount', color='Species', box=True, hover_data=filtered_data.columns,
                        title='Distribution of Amount by Species')
 
+# Create Bar Chart
+# Order is Descending
+bar_fig = px.bar(filtered_data.groupby('Species')['Amount'].sum().reset_index().sort_values('Amount', ascending=False), x='Species', y='Amount', title='Total Amount by Species', labels={'Amount': 'Total Amount'})
+
 # Streamlitでグラフを表示
 st.plotly_chart(line_fig, use_container_width=True)
 st.plotly_chart(violin_fig, use_container_width=True)
+st.plotly_chart(bar_fig, use_container_width=True)
