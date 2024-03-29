@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 
+st.set_page_config(page_icon=":shark:", layout="wide")
+
 np.random.seed(0)  
 # JP: 魚種ごとにAmountの分布を調整するための関数を定義
 # EN: Define a function to adjust the distribution of Amount for each species
