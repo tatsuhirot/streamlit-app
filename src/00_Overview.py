@@ -1,6 +1,6 @@
 # streamlit を使用するために import します
 import streamlit as st
-st.set_page_config(page_icon=":shark:", layout="wide")
+st.set_page_config(page_icon=":ship:", layout="wide")
 
 content_en = """
 ## Data Visualization Projects

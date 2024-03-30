@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
-st.set_page_config(page_icon=":shark:", layout="wide")
+st.set_page_config(page_icon=":ship:", layout="wide")
 
 # データと計算式の再定義
 np.random.seed(0)
