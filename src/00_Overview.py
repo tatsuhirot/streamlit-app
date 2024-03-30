@@ -7,9 +7,9 @@ content_en = """
 
 This Streamlit application is designed to showcase a variety of data visualizations across multiple projects, with a focus on maritime and environmental data analysis. Here are the key areas of focus:
 
-- **Fish Catch Data**: Analysis and visualization of fish catch data, helping to understand trends in fish populations, catch volumes by species, and the impact of fishing on marine ecosystems.
+- **Fish Catch Viewer**: Analysis and visualization of fish catch data, helping to understand trends in fish populations, catch volumes by species, and the impact of fishing on marine ecosystems.
         
-- **Ship Operational Data**: Visualizations related to the operations of ships, including fuel consumption, CO2 emissions. This area aims to provide insights into the efficiency and environmental impact of maritime transport.
+- **CO2 Emission Viewer**: Visualizations related to the operations of ships, including fuel consumption, CO2 emissions. This area aims to provide insights into the efficiency and environmental impact of maritime transport.
 
 The goal of this app is not only to present data in an interactive and informative manner but also to highlight the importance of sustainable practices and effective operations in  shipping and fishing industries.
 
@@ -27,9 +27,9 @@ content_jp = """
 
 このStreamlitアプリケーションは、海事および環境データ分析に焦点を当てた複数のプロジェクトにわたるさまざまなデータ可視化を紹介するために設計されています。ここでは、重点的に扱う主な分野を紹介します：
 
-- **魚の漁獲データ**：魚の漁獲データの分析と可視化を行い、魚の個体群の傾向、種別の漁獲量、および漁業が海洋生態系に与える影響を理解するのに役立ちます。
+- **Fish Catch Viewer**：魚の漁獲データの分析と可視化を行い、魚の個体群の傾向、種別の漁獲量、および漁業が海洋生態系に与える影響を理解するのに役立ちます。
 
-- **船舶運航データ**：船舶の運航に関連する可視化、燃料消費量、CO2排出量などを含みます。この分野は、海上輸送の効率性と環境への影響についての洞察を提供することを目指しています。
+- **CO2 Emission Viewer**：船舶の運航に関連する可視化、燃料消費量、CO2排出量などを含みます。この分野は、海上輸送の効率性と環境への影響についての洞察を提供することを目指しています。
 
 このアプリの目標は、データをインタラクティブに提示するだけでなく、船舶および漁業の業界における持続可能な実践と効果的な運用の重要性を強調することです。
 
@@ -46,9 +46,9 @@ content_es = """
 
 Esta aplicación Streamlit está diseñada para mostrar una variedad de visualizaciones de datos en múltiples proyectos, con un enfoque en el análisis de datos marítimos y ambientales. Aquí están las áreas clave de enfoque:
 
-- **Datos de Captura de Peces**: Análisis y visualización de datos de captura de peces, ayudando a comprender las tendencias en las poblaciones de peces, los volúmenes de captura por especie y el impacto de la pesca en los ecosistemas marinos.
+- **Fish Catch Viewer**: Análisis y visualización de datos de captura de peces, ayudando a comprender las tendencias en las poblaciones de peces, los volúmenes de captura por especie y el impacto de la pesca en los ecosistemas marinos.
 
-- **Datos Operativos de Barcos**: Visualizaciones relacionadas con las operaciones de los barcos, incluyendo el consumo de combustible, las emisiones de CO2. Esta área tiene como objetivo proporcionar información sobre la eficiencia y el impacto ambiental del transporte marítimo.
+- **CO2 Emission Viewer**: Visualizaciones relacionadas con las operaciones de los barcos, incluyendo el consumo de combustible, las emisiones de CO2. Esta área tiene como objetivo proporcionar información sobre la eficiencia y el impacto ambiental del transporte marítimo.
 
 El objetivo de esta aplicación no es solo presentar datos de manera interactiva e informativa, sino también destacar la importancia de las prácticas sostenibles y las operaciones efectivas en las industrias de envío y pesca.
 
